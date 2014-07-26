@@ -61,3 +61,36 @@ void loop() {
 See 
 * <http://forum.pjrc.com/threads/24861-Teensy-3-1-without-arduino-IDE>
 * <https://www.pjrc.com/teensy/gcc.html>
+
+Followed the essential instructions on the teensy web pages by changing references in the makefile to refer to the 3.1 and not the 3.0. For this 
+(all references to 128 were changed to 256).
+
+One section seemed to indicate I should change the line commented out for windows but it turned out the comment was wrong and 
+I left it like it is to work on windows computer.
+
+```
+# path location for Teensy Loader, teensy_post_compile and teensy_reboot
+TOOLSPATH = $(ARDUINOPATH)/hardware/tools   # on Linux
+#TOOLSPATH = $(ARDUINOPATH)/hardware/tools/tools/avr/bin   # on Mac or Windows
+```
+
+I simpified the example program and saved it as main.c 
+
+```c 
+#include "WProgram.h"
+
+int main(void)
+{
+
+	pinMode(13, OUTPUT);
+	while (1) {
+		digitalWriteFast(13, HIGH);
+		delay(101);
+		digitalWriteFast(13, LOW);
+		delay(900);
+	}
+
+
+}
+
+```
