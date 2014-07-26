@@ -50,7 +50,7 @@ void setup() {
 // the loop routine runs over and over again forever:
 void loop() {
   digitalWrite(led, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(100);               // wait for a 0.9 second
+  delay(100);               // wait for a 0.1 second
   digitalWrite(led, LOW);    // turn the LED off by making the voltage LOW
   delay(900);               // wait for a 0.9 second
 }
@@ -58,5 +58,6 @@ void loop() {
 
 ## Using Teensy 3.1 Without the Arduino IDE
 
-See <http://forum.pjrc.com/threads/24861-Teensy-3-1-without-arduino-IDE>
-
+See 
+* <http://forum.pjrc.com/threads/24861-Teensy-3-1-without-arduino-IDE>
+* <https://www.pjrc.com/teensy/gcc.html>
