@@ -1,0 +1,33 @@
+Welcome to minicom 2.6.1                                                                        
+                                                                                                
+OPTIONS: I18n                                                                                   
+Compiled on Feb 11 2012, 18:56:01.                                                              
+Port /dev/ttyACM0                                                                               
+                                                                                                
+Press CTRL-A Z for help on special keys                                                         
+                                                                                                
+Done executing /boot.py                                                                         
+About execute '/src/main.py'                                                                    
+could not open file '/src/main.py' for reading                                                  
+Unable to open '/src/main.py'                                                                   
+Done executing '/src/main.py'                                                                   
+Micro Python for Teensy 3.1                                                                     
+Type "help()" for more information.                                                             
+>>> help()                                                                                      
+Welcome to Micro Python!                                                                        
+                                                                                                
+This is a *very* early version of Micro Python and has minimal functionality.                   
+                                                                                                
+Specific commands for the board:                                                                
+    pyb.info()             -- print some general information                                    
+    pyb.gc()               -- run the garbage collector
+    pyb.delay(<n>)         -- wait for n milliseconds
+    pyb.Led(<n>)           -- create Led object for LED n (n=0)
+                              Led methods: on(), off()
+    pyb.gpio(<pin>)        -- read gpio pin
+    pyb.gpio(<pin>, <val>) -- set gpio pin
+>>> pyb.Led(0)
+<LED 0>
+>>> pyb.led(1)
+1
+>>> 
