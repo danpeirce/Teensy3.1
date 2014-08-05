@@ -113,4 +113,4 @@ and
 MicroPython was cross compiled on a Linux computer. Once the hex file is created it can be loaded onto the Teensy3.1. 
 I accessed Micropython via Minicom on Linux. I also accessed it using PuTTY on a Windows computer. A short interactive session with MicroPython can be seen here:
 
-* [MicroPython interactive session](linux/microcropython.txt)
+* [MicroPython interactive session](linux/micropython.txt)
