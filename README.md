@@ -100,7 +100,7 @@ In the case of main.cpp I tested it essentially as extracted from the downloaded
 
 * [main.cpp](linux/main.cpp)
 
-### Item I lost track of
+#### Item I lost track of
 
 * <http://forum.pjrc.com/threads/24527-Teensy-3-0-Project-Template>
 
