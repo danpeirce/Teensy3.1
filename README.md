@@ -100,6 +100,14 @@ In the case of main.cpp I tested it essentially as extracted from the downloaded
 
 * [main.cpp](linux/main.cpp)
 
+### Item I lost track of
+
+* <http://forum.pjrc.com/threads/24527-Teensy-3-0-Project-Template>
+
+I should have a closser look at this template (setup for Linux)
+Also see
+* <https://github.com/apmorton/teensy-template>
+
 ## MicroPython
 
 MicroPython was compiled following the instructions at (links to Teensy forum)
