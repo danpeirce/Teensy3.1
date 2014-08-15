@@ -124,7 +124,7 @@ as well as adding the extracted folders to the enviroment variable can be found 
 
 An interactive session with Micro Python looked like this (many features listed are not yet implemented in Teensy 3.1)
 
-'''
+```
 Executing main.py
 Micro Python v1.2-59-gecb5792 on 2014-08-11; Teensy-3.1 with MK20DX256
 Type "help()" for more information.
@@ -172,7 +172,7 @@ For further help on a specific object, type help(obj)
 >>> 
  CTRL-A Z for help |115200 8N1 | NOR | Minicom 2.6.1  | VT102 |      Offline                                                
 
-'''
+```
 
 ### Early Setup to Build Micro Python for Teensy 3.1.
 
