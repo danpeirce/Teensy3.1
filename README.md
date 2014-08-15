@@ -5,7 +5,7 @@ Notes Related to Teensy 3.1 ARM MCU Board
 * [The Teensy 3.1 web page](https://www.pjrc.com/teensy/teensy31.html)
 
 The Teensy 3.1 board can be used for projects written in C, Arduino and/or MicroPython. I'm intrigued by the 
-possibilities in an educational set ting. With that in mind I will acquire one of these boards and explore the possibilities.
+possibilities in an educational setting. With that in mind I will acquire one of these boards and explore the possibilities.
 
 ## Installation
 
@@ -109,6 +109,72 @@ Also see
 * <https://github.com/apmorton/teensy-template>
 
 ## MicroPython
+ 
+### Building Micro Python for Teensy 3.1.
+
+Currently the Teensy 3.1 port of Micro Python builds under Linux and not under Windows.
+
+The tool chain required for the build can be found at <https://launchpad.net/gcc-arm-embedded>.
+
+Downlaod the current Linux *.tar.bz2 file. Instructions regarding unpacking the file and moving it to the correct location 
+as well as adding the extracted folders to the enviroment variable can be found at 
+<http://eliaselectronics.com/stm32f4-tutorials/setting-up-the-stm32f4-arm-development-toolchain/>
+
+* [MicroPython interactive session](linux/micropython_help.txt)
+
+An interactive session with Micro Python looked like this (many features listed are not yet implemented in Teensy 3.1)
+
+'''
+Executing main.py
+Micro Python v1.2-59-gecb5792 on 2014-08-11; Teensy-3.1 with MK20DX256
+Type "help()" for more information.
+>>> 
+>>> help()
+Welcome to Micro Python!
+
+For online help please visit http://micropython.org/help/.
+
+Quick overview of commands for the board:
+  pyb.info()    -- print some general information
+  pyb.gc()      -- run the garbage collector
+  pyb.delay(n)  -- wait for n milliseconds
+  pyb.Switch()  -- create a switch object
+                   Switch methods: (), callback(f)
+  pyb.LED(n)    -- create an LED object for LED n (n=1,2,3,4)
+                   LED methods: on(), off(), toggle(), intensity(<n>)
+  pyb.Pin(pin)  -- get a pin, eg pyb.Pin('X1')
+  pyb.Pin(pin, m, [p]) -- get a pin and configure it for IO mode m, pull mode p
+                   Pin methods: init(..), value([v]), high(), low()
+  pyb.ExtInt(pin, m, p, callback) -- create an external interrupt object
+  pyb.ADC(pin)  -- make an analog object from a pin
+                   ADC methods: read(), read_timed(buf, freq)
+  pyb.DAC(port) -- make a DAC object
+                   DAC methods: triangle(freq), write(n), write_timed(buf, freq)
+  pyb.RTC()     -- make an RTC object; methods: datetime([val])
+  pyb.rng()     -- get a 30-bit hardware random number
+  pyb.Servo(n)  -- create Servo object for servo n (n=1,2,3,4)
+                   Servo methods: calibration(..), angle([x, [t]]), speed([x, [t]])
+  pyb.Accel()   -- create an Accelerometer object
+                   Accelerometer methods: x(), y(), z(), tilt(), filtered_xyz()
+
+Pins are numbered X1-X12, X17-X22, Y1-Y12, or by their MCU name
+Pin IO modes are: pyb.Pin.IN, pyb.Pin.OUT_PP, pyb.Pin.OUT_OD
+Pin pull modes are: pyb.Pin.PULL_NONE, pyb.Pin.PULL_UP, pyb.Pin.PULL_DOWN
+Additional serial bus objects: pyb.I2C(n), pyb.SPI(n), pyb.UART(n)
+
+Control commands:
+  CTRL-A        -- on a blank line, enter raw REPL mode
+  CTRL-B        -- on a blank line, enter normal REPL mode
+  CTRL-C        -- interrupt a running program
+  CTRL-D        -- on a blank line, do a soft reset of the board
+
+For further help on a specific object, type help(obj)
+>>> 
+ CTRL-A Z for help |115200 8N1 | NOR | Minicom 2.6.1  | VT102 |      Offline                                                
+
+'''
+
+### Early Setup to Build Micro Python for Teensy 3.1.
 
 MicroPython was compiled following the instructions at (links to Teensy forum)
 
