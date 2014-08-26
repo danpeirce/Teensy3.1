@@ -13,3 +13,5 @@ x=pyb.led(0)
 print("\n\"fix-2014-01-14\" version of Micro Python run on a Teensy3.1")
 print("Testing for KPU Physics\n")
 help()
+test()
+
