@@ -50,6 +50,10 @@ void loop() {
 }
 ```
 
+### added C library
+
+* [c library](libraries)
+
 ## Using Teensy 3.1 Without the Arduino IDE
  
 ### This was run under Windows.
