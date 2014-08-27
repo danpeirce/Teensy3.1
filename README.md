@@ -50,9 +50,18 @@ void loop() {
 }
 ```
 
-### added C library
+### Creating User Libraries
 
-* [c library](libraries)
+The Arduino comes with a large number of libraries that provide access to 
+the numerous peripheral modules built into the MCU. Most of these libraries are c++ files.
+
+It is also possible to create user libraries. User libraries can be either C or C++ files; however, 
+since most Arduino libraries define c++ classes and making use of those requires C++.
+
+I have created a sample C file that implements a state machine that detects predefined text input and 
+returns commands in the form of an enum.
+
+* [c library](libraries/command)
 
 ## Using Teensy 3.1 Without the Arduino IDE
  
